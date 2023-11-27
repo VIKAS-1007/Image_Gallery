@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: kyu;
+  src: url(Poppins-Bold.ttf);
+}
+
+#wrapper {
+  background-color: whitesmoke;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1.2rem;
+  margin-bottom: 82rem;
+  /*itni badi value isliye kyuki wrapped elements k neechay aa ja
+  raha hai margin*/
+  gap: 20px;
+}
+
+figure {
+  width: 24.5%;
+  /* height: 53%; */
+  /*height specify karney pe responsiveness kam ho ja rahi hai*/
+  position: relative;
+  filter: grayscale(100%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0px;
+  opacity: 0;
+  width: 100%;
+  height: 15%;
+  padding-top: 0.4rem;
+  font-family: kyu;
+  color: white;
+  padding-left: 1.7rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  text-align: center;
+  font-family: kyu;
+  margin-top: 2.5rem;
+  font-size: 2.5rem;
+}
+
+figure:hover {
+  transform: scale(1.03);
+  filter: grayscale(0%);
+  filter: drop-shadow(0 0 25px #333);
+  transition: 0.3s;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+  transform: scale(1.03);
+  transition: 1s;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.5) 25%,
+    rgba(255, 255, 255, 0)
+  );
+}
