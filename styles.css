@@ -10,6 +10,8 @@
 }
 
 #wrapper {
+  /* background-image: linear-gradient(to top, rgb(111, 0, 237), rgb(219, 11, 95)); */
+
   background-color: whitesmoke;
   width: 100vw;
   height: 100vh;
@@ -18,6 +20,8 @@
 }
 
 #container {
+  /* background-image: linear-gradient(to top, rgb(111, 0, 237), rgb(219, 11, 95)); */
+
   width: 100%;
   height: 100%;
   display: flex;
@@ -79,4 +83,17 @@ figure:hover figcaption {
     rgba(0, 0, 0, 0.5) 25%,
     rgba(255, 255, 255, 0)
   );
+}
+
+@media (max-width: 800px) and (min-width: 400px) {
+  #wrapper {
+    background-image: linear-gradient(
+      to top,
+      rgb(111, 0, 237),
+      rgb(219, 11, 95)
+    );
+  }
+  figure {
+    filter: none;
+  }
 }
