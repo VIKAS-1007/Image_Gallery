@@ -96,4 +96,8 @@ figure:hover figcaption {
   figure {
     filter: none;
   }
+
+  #container {
+    margin-bottom: 22rem;
+  }
 }
